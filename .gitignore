@@ -1,0 +1,17 @@
+AS2_*.zip
+minecraft-forge.zip
+asm
+config
+crash-reports
+customnpcs
+forge-1.7.*.jar
+minecraft_server.*.jar
+minetweaker.log
+mods
+resources
+saves
+scripts
+logs
+maps
+backups
+libraries
