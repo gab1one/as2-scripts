@@ -1,14 +1,14 @@
 #! /bin/bash
-sjar="./forge-1.7.10-10.13.2.1291-universal.jar"
-FORGE="minecraft-forge.zip"
+
+FORGE_VERSION="1.7.10-10.13.2.1291"
+FORGE_JAR="forge-$FORGE_VERSION-installer.jar"
 AS2="AS2_1030.zip"
 FASTC="fastcraft-1.21.jar"
 
 #aquire the needed files
-echo "Downloading server jar"
-#this is just a basic forge server install zipped up.
-wget "https://www.dropbox.com/s/igzpw14xse820qa/$FORGE" -O $FORGE
-unzip -o $FORGE
+echo "Downloading and installing forge"
+wget "http://files.minecraftforge.net/maven/net/minecraftforge/forge/$FORGE_VERSION/$FORGE_JAR" -O $FORGE_JAR
+java -jar $FORGE_JAR --installServer
 
 echo "downloading AS2"
 wget "http://int.creeperrepo.net/JadedRepo/$AS2" -O $AS2
