@@ -1,5 +1,5 @@
 # AS2 Server scripts
-This is a collection of scripts to bootstrap and run an Aquarian Skies 2 server.
+This is a collection of scripts to bootstrap and run an Aquarian Skies 2 server on a Linux machine.
 ## Setup
 - Clone the repository.
 - run ` setup.sh`
