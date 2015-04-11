@@ -1,6 +1,6 @@
 #! /bin/bash
 
-FORGE_VERSION="1.7.10-10.13.3.1360-1.7.10"
+FORGE_VERSION="1.7.10-10.13.2.1352-1.7.10"
 FORGE_JAR="forge-$FORGE_VERSION-installer.jar"
 AS2="LinuxMac-AS2-1.0.33b.zip"
 FASTC="fastcraft-1.21.jar"
