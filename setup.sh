@@ -12,7 +12,10 @@ java -jar $FORGE_JAR --installServer
 
 echo "downloading AS2"
 wget "http://minecraft.curseforge.com/modpacks/225550-agrarian-skies-2/files/2233719/download" -O $AS2
-unzip -o "$AS2" "/minecraft" -d .
+unzip -o $AS2
+mv minecraft/* .
+rm -rf minecraft
+
 
 echo "disabling client only mods"
 while read mod ; do
