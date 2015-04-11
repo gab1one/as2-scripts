@@ -2,7 +2,7 @@
 
 FORGE_VERSION="1.7.10-10.13.3.1360-1.7.10"
 FORGE_JAR="forge-$FORGE_VERSION-installer.jar"
-AS2="LinuxMac -AS2 1.0.33b.zip"
+AS2="LinuxMac-AS2-1.0.33b.zip"
 FASTC="fastcraft-1.21.jar"
 
 #aquire the needed files
@@ -12,7 +12,7 @@ java -jar $FORGE_JAR --installServer
 
 echo "downloading AS2"
 wget "http://minecraft.curseforge.com/modpacks/225550-agrarian-skies-2/files/2233719/download" -O $AS2
-unzip -o "$AS2"
+unzip -o "$AS2" "/minecraft" -d .
 
 echo "disabling client only mods"
 while read mod ; do
