@@ -15,6 +15,7 @@ wget "http://minecraft.curseforge.com/modpacks/225550-agrarian-skies-2/files/223
 unzip -o $AS2
 mv minecraft/* .
 rm -rf minecraft
+rm -f instance.cfg #client only file
 
 
 echo "disabling client only mods"
