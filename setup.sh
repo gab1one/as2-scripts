@@ -2,7 +2,7 @@
 
 FORGE_VERSION="1.7.10-10.13.3.1360-1.7.10"
 FORGE_JAR="forge-$FORGE_VERSION-installer.jar"
-AS2="AS2_1033b.zip"
+AS2="LinuxMac -AS2 1.0.33b.zip"
 FASTC="fastcraft-1.21.jar"
 
 #aquire the needed files
@@ -10,12 +10,8 @@ echo "Downloading and installing forge"
 wget "http://files.minecraftforge.net/maven/net/minecraftforge/forge/$FORGE_VERSION/$FORGE_JAR" -O $FORGE_JAR
 java -jar $FORGE_JAR --installServer
 
-# echo "downloading AS2"
-# wget "http://int.creeperrepo.net/JadedRepo/$AS2" -O $AS2
-# unzip -o "$AS2"
-
 echo "downloading AS2"
-wget "https://www.dropbox.com/s/zdcjegbbk8t0vcl/$AS2" -O $AS2
+wget "http://minecraft.curseforge.com/modpacks/225550-agrarian-skies-2/files/2233719/download" -O $AS2
 unzip -o "$AS2"
 
 echo "disabling client only mods"
